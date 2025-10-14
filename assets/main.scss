@@ -1,0 +1,56 @@
+---
+---
+/* Φόρτωσε το Minima */
+@import "minima";
+
+/* Θέμα: ανοιχτό γκρι + καθαρές κάρτες */
+:root{
+  --page-bg: #f3f4f6;    /* light gray */
+  --card-bg: #ffffff;
+  --card-border: #e5e7eb;
+  --text: #111827;
+  --muted: #6b7280;
+  --accent: #2563eb;     /* μπλε για links */
+}
+
+body{
+  background: var(--page-bg);
+  color: var(--text);
+}
+
+/* Κεντρικό container */
+.page-content { background: transparent; }
+
+/* Grid wrapper */
+.cv-grid{
+  display: grid;
+  grid-template-columns: repeat( auto-fill, minmax(220px, 1fr) );
+  gap: 16px;
+  max-width: 1100px;
+  margin: 24px auto 40px;
+  padding: 0 12px;
+}
+
+/* Κάρτα */
+.cv-card{
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.04);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.cv-card:hover{ transform: translateY(-2px); box-shadow: 0 10px 22px rgba(0,0,0,.06); }
+
+/* Εικόνα προφίλ */
+.cv-avatar{
+  width: 64px; height: 64px; border-radius: 50%;
+  object-fit: cover; display:block; margin: 4px 0 10px;
+  border: 1px solid var(--card-border);
+}
+
+/* Τίτλοι/λεπτομέρειες */
+.cv-name{ font-weight: 700; margin: 4px 0 2px; }
+.cv-role{ color: var(--muted); font-size: .95rem; margin: 0 0 8px; }
+.cv-links a{ color: var(--accent); text-decoration: none; margin-right: 10px; }
+.cv-links a:hover{ text-decoration: underline; }
