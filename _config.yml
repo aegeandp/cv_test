@@ -4,7 +4,7 @@ description: Βιογραφικά φοιτητών SDY60 (2025)
 theme: minima
 
 # Για project site (π.χ. org/repo 'cv-website') πρέπει baseurl = '/cv-website'
-baseurl: "/cv-website"
+baseurl: "/cv_test"
 url: ""   # θα συμπληρωθεί αυτόματα από το GitHub Pages deployment env
 
 # Plugins (υποστηρίζονται στο GitHub Actions build)
