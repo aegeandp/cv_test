@@ -1,0 +1,30 @@
+---
+layout: default
+title: Βιογραφικά
+---
+
+<h1 style="text-align:center; margin: 18px 0 10px;">SDY60 — Βιογραφικά 2025</h1>
+<p style="text-align:center; color:#6b7280; margin:0 0 18px;">
+  Συνεργατικό site με Jekyll & GitHub Pages
+</p>
+
+<div class="cv-grid">
+  {% assign people = site.data.people | sort: "name" %}
+  {% for p in people %}
+    <article class="cv-card">
+      <a href="{{ p.url | relative_url }}">
+        <img class="cv-avatar"
+             src="{{ (p.photo | default: '/assets/img/avatar-default.png') | relative_url }}"
+             alt="{{ p.name }}">
+      </a>
+      <div class="cv-name">
+        <a href="{{ p.url | relative_url }}">{{ p.name }}</a>
+      </div>
+      {% if p.role %}<div class="cv-role">{{ p.role }}</div>{% endif %}
+      <div class="cv-links">
+        {% if p.linkedin %}<a href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+        {% if p.github %}<a href="{{ p.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</div>
