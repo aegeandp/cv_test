@@ -1,5 +1,12 @@
-
 - name: Maria Kanelou
   url: /bios/maria-kanelou
+  role: Data Engineer
+  photo: /assets/img/maria.jpg
+  linkedin: https://www.linkedin.com/in/maria-kanelou
+  github: https://github.com/mkanelou
+
 - name: Nikos Papadopoulos
   url: /bios/nikos-papadopoulos
+  role: Mobile Dev
+  photo: /assets/img/nikos.jpg
+  github: https://github.com/nikospap
