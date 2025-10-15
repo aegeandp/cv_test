@@ -1,7 +1,7 @@
 
 # SDY60 CV Website (Jekyll + GitHub Pages)
 
-Αυτό είναι starter για Jekyll site που κάνει deploy σε GitHub Pages με GitHub Actions (δεν χρειάζεται τοπική εγκατάσταση Ruby).
+ΓΕ1 - Δοκιμαστική έκδοση
 
 ## Πώς προσθέτω άτομο
 1. Πρόσθεσε νέα σελίδα στο φάκελο `bios/` με front matter:
@@ -21,5 +21,5 @@
 3. Κάνε commit + Pull Request.
 
 ## Σημαντικό
-- Το `baseurl` στο `_config.yml` είναι `/cv-website` γιατί είναι project site.
+- Το `baseurl` στο `_config.yml` είναι `/cv_test` γιατί είναι project site.
 - Χρησιμοποίησε `{{ "/bios/..." | relative_url }}` για σωστά links.
