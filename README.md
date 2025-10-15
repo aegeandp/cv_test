@@ -2,6 +2,7 @@
 # SDY60 CV Website (Jekyll + GitHub Pages)
 
 ΓΕ1 - Δοκιμαστική έκδοση
+url: https://aegeandp.github.io/cv_test/
 
 ## Πώς προσθέτω άτομο
 1. Πρόσθεσε νέα σελίδα στο φάκελο `bios/` με front matter:
